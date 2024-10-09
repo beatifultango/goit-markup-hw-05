@@ -671,47 +671,83 @@
       </div>
     </footer>
     <div class="modal-form">
-      <h2 class="form-title">Leave your contacts and we will call you back</h2>
-      <div class="content-div">
-        <form>
-          
-          <svg width="24" height="24" class="close-button">
-            <use xlink:href="./images/form-icons.svg#icon-Vector"></use>
-          </svg>
+      <div class="modal-container">
+        <svg width="24" height="24" class="close-button" viewBox="0 0 32 32">
+          <use href="/images/icons.svg#icon-close"></use>
+        </svg>
 
-          <label
+        <h2>Leave your contacts and we will call you back</h2>
+
+        <form class="my-form">
+          <label class="label" for="name"
             >Name
-            <input type="text" placeholder="  name" name="name" />
+            <div class="form-div">
+              <input type="text" placeholder="  name" name="name" id="name" />
+              <svg
+                class="input-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 32 32"
+              >
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </label>
-        </form>
-        <form>
-          <label
+          <label class="label" for="phone"
             >Phone
-            <input type="phone" placeholder="  phone" name="phone" />
+            <div class="form-div">
+              <input type="phone" placeholder="  phone" name="phone" id="phone" />
+
+              <svg
+                class="input-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 32 32"
+              >
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </label>
-        </form>
-        <form>
-          <label
+          <label class="label" for="email"
             >Email
-            <input type="email" placeholder="  email" name="email" />
+            <div class="form-div">
+              <input type="email" placeholder="  email" name="email" id="email"/>
+              <svg
+                class="input-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 32 32"
+              >
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </label>
+          <div class="form-div">
+            <label class="label" for="text-input"
+              >Comment
+              <textarea placeholder="  Text input" name="text-input" id="text-input">
+              </textarea>
+            </label>
+          </div>
+          <div class="check-div">
+            <input
+              type="checkbox"
+              id="privacy-policy"
+              name="checkbox"
+              value="true"
+              required
+            />
+            <label class="label-checkbox">
+              I accept the terms and conditions of the
+              <span class="privacy">
+                <a href="#" target="_blank">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+          <div class="send">
+            <button type="submit" id="modal-button">Send</button>
+          </div>
         </form>
-        <form>
-          <label
-            >Comment
-            <textarea placeholder="  Text input" name="text-input"></textarea>
-          </label>
-        </form>
-        <form>
-          <p>
-            I accept the terms and conditions of the
-            <a href="" target="_blank">Privacy Policy</a>
-          </p>
-          <label>
-            <input type="checkbox" name="privacy" value="policy" />
-          </label>
-        </form>
-        <button type="submit">Send</button>
       </div>
     </div>
   </body>
