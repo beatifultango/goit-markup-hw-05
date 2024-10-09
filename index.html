@@ -631,14 +631,14 @@
                     class="footer-links"
                   >
                     <svg class="socials-footer" width="40" height="40">
-                      <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                      <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="https://x.com/" target="_blank" class="footer-links">
                     <svg class="socials-footer" width="40" height="40">
-                      <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -649,7 +649,7 @@
                     class="footer-links"
                   >
                     <svg class="socials-footer" width="40" height="40">
-                      <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                      <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -660,7 +660,7 @@
                     class="footer-links"
                   >
                     <svg class="socials-footer" width="40" height="40">
-                      <use xlink:href="./images/icons.svg#icon-linkedn"></use>
+                      <use href="./images/icons.svg#icon-linkedn"></use>
                     </svg>
                   </a>
                 </li>
@@ -672,9 +672,12 @@
     </footer>
     <div class="modal-form">
       <div class="modal-container">
-        <svg width="24" height="24" class="close-button" viewBox="0 0 32 32">
+        <div class="div-close-button">
+          <svg width="24" height="24" class="close-button" viewBox="0 0 32 32">
           <use href="/images/icons.svg#icon-close"></use>
         </svg>
+        </div>
+        
 
         <h2>Leave your contacts and we will call you back</h2>
 
@@ -682,7 +685,12 @@
           <label class="label" for="name"
             >Name
             <div class="form-div">
-              <input type="text" placeholder="  name" name="name" id="name" />
+              <input type="text" 
+              placeholder="  name" 
+              name="name" 
+              id="name" 
+              class="form-input"
+              autocomplete="off"/>
               <svg
                 class="input-icon"
                 width="24"
@@ -696,7 +704,12 @@
           <label class="label" for="phone"
             >Phone
             <div class="form-div">
-              <input type="phone" placeholder="  phone" name="phone" id="phone" />
+              <input type="phone"
+               placeholder="  phone" 
+               name="phone" 
+               id="phone" 
+               class="form-input"
+               autocomplete="off"/>
 
               <svg
                 class="input-icon"
@@ -704,14 +717,19 @@
                 height="24"
                 viewBox="0 0 32 32"
               >
-                <use href="./images/icons.svg#icon-phone"></use>
+                <use href=".images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </label>
           <label class="label" for="email"
             >Email
             <div class="form-div">
-              <input type="email" placeholder="  email" name="email" id="email"/>
+              <input type="email"
+               placeholder="  email" 
+               name="email" 
+                id="email"
+                class="form-input"
+                autocomplete="off"/>
               <svg
                 class="input-icon"
                 width="24"
@@ -725,10 +743,17 @@
           <div class="form-div">
             <label class="label" for="text-input"
               >Comment
-              <textarea placeholder="  Text input" name="text-input" id="text-input">
+              <textarea
+               placeholder="  Text input" 
+               name="text-input" cols="3" 
+               id="text-input"
+               class="form-textarea">
               </textarea>
             </label>
           </div>
+          
+        </form>
+        <form>
           <div class="check-div">
             <input
               type="checkbox"
@@ -737,15 +762,18 @@
               value="true"
               required
             />
-            <label class="label-checkbox">
+            <label class="label-checkbox" for="checkbox">
               I accept the terms and conditions of the
               <span class="privacy">
                 <a href="#" target="_blank">Privacy Policy</a>
               </span>
             </label>
-          </div>
+          </div> 
           <div class="send">
-            <button type="submit" id="modal-button">Send</button>
+            <button type="submit" 
+            id="modal-button">
+              Send
+            </button>
           </div>
         </form>
       </div>
