@@ -48,7 +48,7 @@ p {
 
 .contacts {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
 }
 .mail-tel {
   text-decoration: none;
@@ -240,7 +240,6 @@ body {
 }
 .about-us-text {
   padding-bottom: 8px;
-  
 }
 .about-us p {
   font-size: 16px;
@@ -565,7 +564,6 @@ footer {
 .social-links {
   display: flex;
   list-style-type: none;
-  align-items: ;
 }
 
 .social-links-footer {
@@ -593,174 +591,157 @@ footer {
   --color1: #404bbf;
 }
 
-.modal-form{
+.modal-form {
   position: relative;
 }
 .modal-container {
   width: 408px;
   justify-content: center;
   position: relative;
-  border: 1px solid #2E2F4266;
+  border: 1px solid #2e2f4266;
   border-radius: 4px;
-  box-shadow:0 1 1 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1 1 0 rgba(0, 0, 0, 0.14);
   background-color: #fcfcfc;
-  padding:24px;
-  margin:0 auto;
-  
- 
+  padding: 24px;
+  margin: 0 auto;
 }
 
-.div-close-button{
+.div-close-button {
   display: flex;
   justify-content: end;
-  top:24px;
-  
+  top: 24px;
 }
 
-.close-button{
-  
-  border-radius:4px;
-  border:1px solid #E7E9FC;
-  
-  justify-content:end;
+.close-button {
+  justify-content: end;
   align-items: center;
   cursor: pointer;
   width: 24px;
-  height:24px;
+  height: 24px;
   position: absolute;
-  
-  
-  
+  border: none;
 }
 
-.close-button :hover{
-  --color2:#404BBF;
+.close-button :hover {
+  --color3: #404bbf;
+  --color4: #ffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-h2{
+h2 {
   white-space: nowrap;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 4%;
-  font-family:"Roboto", sans-serif;
-  margin-top:48px;
-  margin-bottom:16px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 48px;
+  margin-bottom: 16px;
 }
 
-.my-form{
+.my-form {
   padding: 0 auto;
-  margin:0 auto;
-  width:360px;
-  color:#8E8F99;
-  
+  margin: 0 auto;
+
+  color: #8e8f99;
 }
 
-
-.form-title{
+.form-title {
   text-align: center;
   width: 360px;
   display: flex;
   justify-content: center;
-  
-
 }
 
-.form-div{
+.form-div {
   align-items: center;
   justify-content: center;
-  
 }
 
-
-
-.label{
+.label {
   display: block;
   font-family: "Roboto" sans-serif;
-  padding-bottom:2px;
-  margin-bottom:8px;
+  padding-bottom: 2px;
+
   font-size: 12px;
-  position:relative;
+  position: relative;
   align-items: center;
   font-weight: 400;
-  
 }
-.input-icon{
+
+.input-icon {
   position: absolute;
-  left:16px;
-  top:50%;
-  
+  left: 16px;
+  top: 40%;
 }
+
+
+
 .form-input,
-.form-textarea{
-  width:100%;
-  padding:10px 10px 10px 40px;
-  border-radius:4px;
+.form-textarea {
+  width: 100%;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #2e2f4240;
+  padding: 10px 10px 10px 40px;
   outline: none;
-  border:0.5px solid #2E2F4266;
- 
-  
+  box-sizing: border-box;
+  height: 40px;
+  margin-bottom: 8px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input[type="text"] {
+  outline: none;
+  border: 1px solid #2e2f4240;
 }
 
 .form-input:focus,
-.form-textarea:focus{
-  border:1px solid #9747FF;
+.form-textarea:focus {
+  border: 1px solid #9747ff;
 }
 .check-div {
-  display:flex;
+  display: flex;
   align-items: center;
-  margin-bottom:24px;
-  
-  
+  margin-bottom: 24px;
 }
 
-.label-checkbox{
+.label-checkbox {
   font-family: inherit;
-  font-size:12px;
+  font-size: 12px;
   line-height: 1.2;
   letter-spacing: 4%;
-  margin-left:10px;
-  
+  margin-left: 10px;
 }
-.privacy{
-  color:#4D5AE5;
+.privacy {
+  color: #4d5ae5;
   text-decoration: underline;
-  
-
 }
-.label-checkbox{
-  font-size:12px;
+.label-checkbox {
+  font-size: 12px;
   font-weight: 400;
   font-family: "Roboto" sans-serif;
 }
-#modal-button{
-  
+#modal-button {
   justify-content: center;
   width: 169px;
-  height:56px;
-  padding:16px 32px;
+  height: 56px;
+  padding: 16px 32px;
   border-radius: 4px;
-  background-color:#4D5AE5;
-  box-shadow: 0 1 1 0  rgba(0, 0, 0, 0.15);
-  color:#FFFFFF;
-  border:none;
+  background-color: #4d5ae5;
+  box-shadow: 0 1 1 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  border: none;
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-.send{
+.send {
   display: flex;
   justify-content: center;
 }
 
-#modal-button:hover{
-  background-color:#404BBF;
-  
+#modal-button:hover {
+  background-color: #404bbf;
 }
-
-

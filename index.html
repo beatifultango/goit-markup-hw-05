@@ -185,7 +185,6 @@
                         viewBox="0 0 32 32"
                         class="socials"
                       >
-                        >
                         <use
                           xlink:href="./images/icons.svg#icon-facebook"
                         ></use>
@@ -270,7 +269,6 @@
                         viewBox="0 0 32 32"
                         class="socials"
                       >
-                        >
                         <use
                           xlink:href="./images/icons.svg#icon-facebook"
                         ></use>
@@ -354,7 +352,7 @@
                         height="40"
                         viewBox="0 0 32 32"
                         class="socials"
-                      >
+                      
                         >
                         <use
                           xlink:href="./images/icons.svg#icon-facebook"
@@ -440,7 +438,6 @@
                         viewBox="0 0 32 32"
                         class="socials"
                       >
-                        >
                         <use
                           xlink:href="./images/icons.svg#icon-facebook"
                         ></use>
@@ -674,42 +671,45 @@
       <div class="modal-container">
         <div class="div-close-button">
           <svg width="24" height="24" class="close-button" viewBox="0 0 32 32">
-          <use href="/images/icons.svg#icon-close"></use>
-        </svg>
+            <use href="./images/form-icons.svg#icon-close"></use>
+          </svg>
         </div>
-        
 
         <h2>Leave your contacts and we will call you back</h2>
 
         <form class="my-form">
-          <label class="label" for="name"
-            >Name
-            <div class="form-div">
-              <input type="text" 
-              placeholder="  name" 
-              name="name" 
-              id="name" 
-              class="form-input"
-              autocomplete="off"/>
+          <div class="form-div">
+            <label class="label" for="name"
+              >Name
+              <input
+                type="text"
+                placeholder="  name"
+                name="name"
+                id="name"
+                class="form-input"
+              />
               <svg
                 class="input-icon"
                 width="24"
                 height="24"
                 viewBox="0 0 32 32"
               >
-                <use href="./images/icons.svg#icon-person"></use>
+                <use href="./images/form-icons.svg#icon-person"></use>
               </svg>
-            </div>
-          </label>
+            </label>
+          </div>
+
           <label class="label" for="phone"
             >Phone
             <div class="form-div">
-              <input type="phone"
-               placeholder="  phone" 
-               name="phone" 
-               id="phone" 
-               class="form-input"
-               autocomplete="off"/>
+              <input
+                type="phone"
+                placeholder="  phone"
+                name="phone"
+                id="phone"
+                class="form-input"
+                autocomplete="off"
+              />
 
               <svg
                 class="input-icon"
@@ -717,41 +717,46 @@
                 height="24"
                 viewBox="0 0 32 32"
               >
-                <use href=".images/icons.svg#icon-phone"></use>
+                <use href="./images/form-icons.svg#icon-phone"></use>
               </svg>
             </div>
           </label>
-          <label class="label" for="email"
-            >Email
-            <div class="form-div">
-              <input type="email"
-               placeholder="  email" 
-               name="email" 
+          <div class="form-div">
+            <label class="label" for="email"
+              >Email
+
+              <input
+                type="email"
+                placeholder="  email"
+                name="email"
                 id="email"
                 class="form-input"
-                autocomplete="off"/>
+                autocomplete="off"
+              />
               <svg
                 class="input-icon"
                 width="24"
                 height="24"
                 viewBox="0 0 32 32"
               >
-                <use href="./images/icons.svg#icon-email"></use>
+                <use href="./images/form-icons.svg#icon-email"></use>
               </svg>
-            </div>
-          </label>
+            </label>
+          </div>
+
           <div class="form-div">
             <label class="label" for="text-input"
               >Comment
               <textarea
-               placeholder="  Text input" 
-               name="text-input" cols="3" 
-               id="text-input"
-               class="form-textarea">
+                placeholder="  Text input"
+                name="text-input"
+                cols="3"
+                id="text-input"
+                class="form-textarea"
+              >
               </textarea>
             </label>
           </div>
-          
         </form>
         <form>
           <div class="check-div">
@@ -762,18 +767,15 @@
               value="true"
               required
             />
-            <label class="label-checkbox" for="checkbox">
+            <label class="label-checkbox" for="privacy-policy">
               I accept the terms and conditions of the
               <span class="privacy">
                 <a href="#" target="_blank">Privacy Policy</a>
               </span>
             </label>
-          </div> 
+          </div>
           <div class="send">
-            <button type="submit" 
-            id="modal-button">
-              Send
-            </button>
+            <button type="submit" id="modal-button">Send</button>
           </div>
         </form>
       </div>
