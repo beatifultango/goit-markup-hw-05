@@ -152,6 +152,7 @@ body {
   font-style: normal;
   color: #2e2f42;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .item {
